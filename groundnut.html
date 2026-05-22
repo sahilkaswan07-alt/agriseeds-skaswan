@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agri-seeds</title>
+    <link rel="stylesheet" href="groundnut.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">    
+</head>
+<body>
+    <header>
+        <nav class="navbar"> 
+            <div>
+              <img src="farming.png" alt="logo" height="70px"> 
+            </div> 
+            <div class="nav-item">
+                <a class="item1" href="index.html">Home</a>
+                <a class="item1" href="about.html">About</a>
+                <a class="item1" href="contact.html">contact</a>                     
+                     
+            </div>
+            <div class="search-bar"> 
+                <button id="cart-btn" onclick="showcart()">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span id="cart-count">0</span>
+              </button>            
+                <input type="text" placeholder="looking something specific?"> 
+                <button id="button">search</button>
+            </div> 
+             <div id="cart-box">
+             <h2>Your Cart</h2>
+             <div id="cart-items"></div>
+             <h3>Total ₹<span id="total">0</span></h3>
+             <input type="text" id="fullname" placeholder="Enter Full Name">
+             <textarea id="address" placeholder="Enter Delivery Address"></textarea>
+             <button onclick="whatsapporder()">
+             Order on WhatsApp
+             </button>
+            </div>            
+        </nav>
+        <div>
+            <div class="hero-section">
+               <img id="farming" src="farming.png" target="main" alt="logo" height="400px" width="400px">        
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="groundnut-part ">
+          <h1 id="head-line">Groundnut seeds</h1>
+          <p>“We don't just sell seeds, we grow possibilities.”</p>
+        </div>
+        <div class="groundnut">               
+            <div class="groundnut-img">           
+              <img class="one-seeds" src="groundnut.png" target="main" alt="groundnut">
+            </div>
+            <div class="groundnut-details">
+              <h1 class="name">Groundnut seed A</h1>
+              <a> price = 700/- </a>
+              <br>
+              <button class="button" onclick="addtocart('groundnut seed A',700)"><i class="fa-solid fa-cart-plus"></i></button>
+              <a> add to cart </a>
+              <h3>Discripation</h3>
+              <p>Time Of Sowing	May To July And Dec To Feb
+               Seed Rate Per Acre	60 To 70 Kgs.
+                Day Of Maturity	100 To 110 Days
+               Leaf Colour	Green Colour
+               Pod Colour	Light Yellow Colour
+               Grain Colour	Light Pink Colour
+               Grain Per Pod	2 Grain
+                Plant Hight	18 To 24 Inches
+               Yield Per Acre (Approx.)	1500 To 2000 Kgs.
+               Oil (%)	48-49 %  one of the popular groundnut seeds processors and bulk peanut seeds company, can deliver high volumes of seeds. We can deliver a good quantity of peanut seeds in India to the farmers. If you would like to buy seeds in large quantities, you can always let us know, and we will be able to help you. Also, we aim to offer customized products and services to clients. We understand the requirements of all the clients individually and cater to them.
+
+               As one of the leading peanut seeds suppliers in the country, we export seeds in India at the most competitive prices. Our team studies the market very carefully, and based on the insights, we decide on the pricing of the groundnut seeds. Also, we focus on proper packaging and supplying the seeds to the farmers as well.
+
+               So, if you want to connect with the bulk peanut seeds company or know more about Groundnut seeds in Gujarat or Bombay Super Seeds, please feel free to contact us
+              </p>            
+            </div>                       
+        </div>
+         <div class="groundnut">               
+            <div class="groundnut-img">           
+              <img class="one-seeds" src="groundnut.png" target="main" alt="groundnut">
+            </div>
+            <div class="groundnut-details">
+              <h1 class="name">Groundnut seed B</h1>
+              <a> price = 700/- </a>
+              <br>
+              <button class="button" onclick="addtocart('groundnut seed B',700)"><i class="fa-solid fa-cart-plus"></i></button>
+              <a> add to cart </a>
+              <h3>Discripation</h3>
+              <p>Time Of Sowing	May To July And Dec To Feb
+               Seed Rate Per Acre	60 To 70 Kgs.
+                Day Of Maturity	100 To 110 Days
+               Leaf Colour	Green Colour
+               Pod Colour	Light Yellow Colour
+               Grain Colour	Light Pink Colour
+               Grain Per Pod	2 Grain
+                Plant Hight	18 To 24 Inches
+               Yield Per Acre (Approx.)	1500 To 2000 Kgs.
+               Oil (%)	48-49 %  one of the popular groundnut seeds processors and bulk peanut seeds company, can deliver high volumes of seeds. We can deliver a good quantity of peanut seeds in India to the farmers. If you would like to buy seeds in large quantities, you can always let us know, and we will be able to help you. Also, we aim to offer customized products and services to clients. We understand the requirements of all the clients individually and cater to them.
+
+               As one of the leading peanut seeds suppliers in the country, we export seeds in India at the most competitive prices. Our team studies the market very carefully, and based on the insights, we decide on the pricing of the groundnut seeds. Also, we focus on proper packaging and supplying the seeds to the farmers as well.
+
+               So, if you want to connect with the bulk peanut seeds company or know more about Groundnut seeds in Gujarat or Bombay Super Seeds, please feel free to contact us
+              </p>            
+            </div>                       
+        </div>
+         <div class="groundnut">               
+            <div class="groundnut-img">           
+              <img class="one-seeds" src="groundnut.png" target="main" alt="groundnut">
+            </div>
+            <div class="groundnut-details">
+              <h1 class="name">Groundnut seed C</h1>
+              <a> price = 700/- </a>
+              <br>
+              <button class="button" onclick="addtocart('groundnut seed C',700)"><i class="fa-solid fa-cart-plus"></i></button>
+              <a> add to cart </a>
+              <h3>Discripation</h3>
+              <p>Time Of Sowing	May To July And Dec To Feb
+               Seed Rate Per Acre	60 To 70 Kgs.
+                Day Of Maturity	100 To 110 Days
+               Leaf Colour	Green Colour
+               Pod Colour	Light Yellow Colour
+               Grain Colour	Light Pink Colour
+               Grain Per Pod	2 Grain
+                Plant Hight	18 To 24 Inches
+               Yield Per Acre (Approx.)	1500 To 2000 Kgs.
+               Oil (%)	48-49 %  one of the popular groundnut seeds processors and bulk peanut seeds company, can deliver high volumes of seeds. We can deliver a good quantity of peanut seeds in India to the farmers. If you would like to buy seeds in large quantities, you can always let us know, and we will be able to help you. Also, we aim to offer customized products and services to clients. We understand the requirements of all the clients individually and cater to them.
+
+               As one of the leading peanut seeds suppliers in the country, we export seeds in India at the most competitive prices. Our team studies the market very carefully, and based on the insights, we decide on the pricing of the groundnut seeds. Also, we focus on proper packaging and supplying the seeds to the farmers as well.
+
+               So, if you want to connect with the bulk peanut seeds company or know more about Groundnut seeds in Gujarat or Bombay Super Seeds, please feel free to contact us
+              </p>            
+            </div>                       
+        </div>
+         <div class="groundnut">               
+            <div class="groundnut-img">           
+              <img class="one-seeds" src="groundnut.png" target="main" alt="groundnut">
+            </div>
+            <div class="groundnut-details">
+              <h1 class="name">Groundnut seed D</h1>
+              <a> price = 700/- </a>
+              <br>
+              <button class="button" onclick="addtocart('groundnut seed D',700)"><i class="fa-solid fa-cart-plus"></i></button>
+              <a> add to cart </a>
+              <h3>Discripation</h3>
+              <p>Time Of Sowing	May To July And Dec To Feb
+               Seed Rate Per Acre	60 To 70 Kgs.
+                Day Of Maturity	100 To 110 Days
+               Leaf Colour	Green Colour
+               Pod Colour	Light Yellow Colour
+               Grain Colour	Light Pink Colour
+               Grain Per Pod	2 Grain
+                Plant Hight	18 To 24 Inches
+               Yield Per Acre (Approx.)	1500 To 2000 Kgs.
+               Oil (%)	48-49 %  one of the popular groundnut seeds processors and bulk peanut seeds company, can deliver high volumes of seeds. We can deliver a good quantity of peanut seeds in India to the farmers. If you would like to buy seeds in large quantities, you can always let us know, and we will be able to help you. Also, we aim to offer customized products and services to clients. We understand the requirements of all the clients individually and cater to them.
+
+               As one of the leading peanut seeds suppliers in the country, we export seeds in India at the most competitive prices. Our team studies the market very carefully, and based on the insights, we decide on the pricing of the groundnut seeds. Also, we focus on proper packaging and supplying the seeds to the farmers as well.
+
+               So, if you want to connect with the bulk peanut seeds company or know more about Groundnut seeds in Gujarat or Bombay Super Seeds, please feel free to contact us
+              </p>            
+            </div>                       
+        </div>
+         <div class="groundnut">               
+            <div class="groundnut-img">           
+              <img class="one-seeds" src="groundnut.png" target="main" alt="groundnut">
+            </div>
+            <div class="groundnut-details">
+              <h1 class="name">Groundnut seed E</h1>
+              <a> price = 700/- </a>
+              <br>
+              <button class="button" onclick="addtocart('groundnut seed E',700)"><i class="fa-solid fa-cart-plus"></i></button>
+              <a> add to cart </a>
+              <h3>Discripation</h3>
+              <p>Time Of Sowing	May To July And Dec To Feb
+               Seed Rate Per Acre	60 To 70 Kgs.
+                Day Of Maturity	100 To 110 Days
+               Leaf Colour	Green Colour
+               Pod Colour	Light Yellow Colour
+               Grain Colour	Light Pink Colour
+               Grain Per Pod	2 Grain
+                Plant Hight	18 To 24 Inches
+               Yield Per Acre (Approx.)	1500 To 2000 Kgs.
+               Oil (%)	48-49 %  one of the popular groundnut seeds processors and bulk peanut seeds company, can deliver high volumes of seeds. We can deliver a good quantity of peanut seeds in India to the farmers. If you would like to buy seeds in large quantities, you can always let us know, and we will be able to help you. Also, we aim to offer customized products and services to clients. We understand the requirements of all the clients individually and cater to them.
+
+               As one of the leading peanut seeds suppliers in the country, we export seeds in India at the most competitive prices. Our team studies the market very carefully, and based on the insights, we decide on the pricing of the groundnut seeds. Also, we focus on proper packaging and supplying the seeds to the farmers as well.
+
+               So, if you want to connect with the bulk peanut seeds company or know more about Groundnut seeds in Gujarat or Bombay Super Seeds, please feel free to contact us
+              </p>            
+            </div>                       
+        </div>
+    </main>
+    <footer class="footer">
+         <img src="farming.png" target="main" alt="logo" height="200px" width="10%" >
+        <div class="working-time">
+            <h2>Shop open</h2>
+            <a>MONDAY to FRIDAY: 8:00 to 21:00</a>
+            <br>
+            <a>SATURDAY to SUNDAY: 9:00 to 22:00</a>
+            <br>
+            <br>
+            <p><u>“Farming - the culture of India.”</u></p>
+            <br>
+            <div>
+              <h2 id="social-media">social media</h2>       
+            </div>
+            <div class="social">
+             <a href="https://www.instagram.com/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+             <a href="https://www.facebook.com/"> <i class="fa-brands fa-facebook-f"></i></a>
+               <a href="https://x.com/" ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                </svg></a>
+            </div>
+            <hr>
+            <div class="copyright">
+              <a>© 2026 Agri seeds. All rights reserved.</a>
+            </div> 
+            <br>
+            <br>
+            <br>
+            <br>
+           <div class="sahil-kaswan">
+            <a>Designed by: Dr.Sahil Choudhary
+              <br>
+            G-mail. sahilkaswan07@gmail.com
+            <br>
+            contact no. 7300479727
+            </a>                        
+           </div>
+        </div>                
+    </footer>
+    <script src="script.js"></script> 
+</body>
+</html>

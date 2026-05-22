@@ -1,0 +1,781 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;   
+}
+.navbar{
+    height:80px;    
+    width:100%;
+    max-width: 1400px;
+    background-color: #182a0c;
+    display: flex; 
+    flex-wrap: wrap;  
+    align-items: center;
+    justify-content: space-between;    
+    padding: 10px 30px; 
+    position: fixed;
+    z-index: 80;
+}
+.item1{ 
+    padding:10px 15px;   
+    color: white ;
+    text-decoration: none;
+    font-family:"Cloister Black", "Old English", fantasy;
+    font-size:18px;  
+    
+}
+.item1:hover{
+    color: gold;
+}
+input {
+   background-color:wheat ; 
+   color: navy;
+   border: none;    
+   padding:7px ;
+   border-radius: 5px;
+   
+}
+#button{
+    padding:7px 5px;
+    border:none;
+    background-color:rgba(248, 194, 3);
+    color: navy;
+    cursor:pointer;
+    border-radius:5px;    
+}
+.hero{
+    display: flex;
+    justify-content: space-evenly;
+}
+.hero-section{
+    height:150px;
+    width: 600px;
+    background-color: #151a28;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 30px;
+    font-family:"Georgia", serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    margin:290px 30px 150px 40px;
+}
+#farming{
+    height: 500px;
+    width: 500px;
+}
+.owner{
+    display: flex;
+    justify-content: flex-end;
+}
+#owner-detail{
+    height:400px;
+    width:400px;
+    border-radius: 50%;    
+    margin: 190px 30px 10px 30px;
+}
+#owner-detail:hover{
+    color: green;
+    border: 3px solid;
+}
+.owner-name{
+    padding: 10px 80px;
+    font-family:"Old English", fantasy;
+}
+main{
+    background-color: grey;
+    padding: 10px 30px;
+    margin: 0px 10px;
+}
+.box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 30px; 
+    margin-top: 80px;  
+}
+.box1{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    background-size: cover;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+.box-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: .3cm;
+    color: #182a0c;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif fantasy;
+}
+.cart-button{
+    white-space: nowrap;
+}
+.button{
+    padding:7px 5px;
+    border:none;
+    background-color:gold;
+    color: navy;
+    cursor:pointer;
+    border-radius:5px;  
+}
+.product{
+    border:3px solid #182a0c ;    
+}
+.product:hover{
+    border:3px solid red;
+}
+/* NAVBAR CART BUTTON 
+
+#cart-btn{
+    position: relative;
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    color: navy;   
+}*/
+#cart-btn{
+    padding:7px 5px;
+    border:none;
+    background-color:gold;
+    color: navy;
+    cursor:pointer;
+    border-radius:5px;
+    position: relative;
+}
+
+/* RED NOTIFICATION */
+
+#cart-count{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 7px;
+    font-size: 12px;
+}
+
+/* CART POPUP */
+
+#cart-box{
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 80px;
+    width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+    z-index: 1000;
+}
+
+/* CART ITEMS */
+
+#cart-items p{
+    margin: 10px 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+/* WHATSAPP BUTTON */
+
+#cart-box button{
+    width: 100%;
+    padding: 10px;
+    background: #25D366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.footer{
+    background-color:black ;
+    height: 100%;
+    max-height: 800px;
+    width: 100%;
+    display: flex;
+    color: white;
+}
+.working-time{
+    font-family:'Times New Roman', Times, serif fantasy;
+    width: 90%;
+    font-size: 21px;
+    padding: 20px 30px;
+    margin-top: 30px;
+}
+.social{
+     display: flex;    
+    width: 150px;   
+    justify-content: space-around;
+    font-size:21px;
+}
+hr{
+    color: white; 
+    margin: 20px 0px 7px 0px; 
+}   
+.copyright{
+    font-size: 8px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0px;
+}
+.sahil-kaswan{
+    font-size: 16px;
+    color: gold;
+    padding: 2px;
+    text-decoration: underline;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* ================= MOBILE VIEW ================= */
+/*@media screen and (max-width: 768px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+    /* Navbar */
+ /*   .navbar{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .nav-item{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .item1{
+        font-size: 16px;
+    }
+
+    /* Search Bar */
+  /*  .search-bar{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+
+    .search-bar input{
+        width: 70%;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    #button{
+        padding: 10px 15px;
+    }
+
+    /* Hero Section */
+ /*   .hero{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #farming{
+        width: 90%;
+        height: auto;
+    }
+
+    #owner-detail{
+        width: 180px;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    /* Product Boxes */
+  /*  .box{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .box1{
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .box-data{
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .button{
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    /* Cart Box */
+ /*   #cart-box{
+        width: 90%;
+        right: 5%;
+        top: 80px;
+    }
+
+    /* Footer */
+ /*   .footer{
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .footer img{
+        width: 70%;
+        height: auto;
+    }
+
+    .working-time{
+        width: 100%;
+    }
+
+    .social{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+/* EXTRA SMALL MOBILE */
+/*@media screen and (max-width: 480px) {
+
+    .box{
+        grid-template-columns: 1fr;
+    }
+
+    .search-bar input{
+        width: 100%;
+    }
+
+    #button{
+        width: 100%;
+    }
+
+    .item1{
+        font-size: 14px;
+    }
+
+    #owner-detail{
+        width: 140px;
+    }
+
+    .footer img{
+        width: 90%;
+    }
+}*/
+/* ================= MOBILE RESPONSIVE ================= */
+/* =========================
+   MOBILE RESPONSIVE CSS
+   ONLY FOR PHONE
+========================= */
+
+@media screen and (max-width:768px){
+
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+
+    body{
+        overflow-x:hidden;
+        padding-top:220px;
+    }
+
+    /* ===== NAVBAR ===== */
+
+    .navbar{
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        height:auto;
+        max-height:none;
+        background:#182a0c;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        gap:12px;
+        padding:12px 10px;
+        z-index:999;
+    }
+
+    .navbar img{
+        height:55px;
+        width:auto;
+    }
+
+    .nav-item{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-wrap:wrap;
+        gap:8px;
+        width:100%;
+    }
+
+    .item1{
+        padding:6px 10px;
+        font-size:15px;
+        color:white;
+        text-decoration:none;
+    }
+
+    /* ===== SEARCH BAR ===== 
+
+    .search-bar{
+        width:100%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-wrap:wrap;
+        gap:8px;
+    }
+
+    .search-bar input{
+        width:70%;
+        padding:10px;
+        border:none;
+        border-radius:6px;
+        font-size:14px;
+    }
+
+    #button{
+        padding:10px 14px;
+        border:none;
+        border-radius:6px;
+    }
+
+    /* ===== HERO SECTION ===== */
+
+    .hero{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        text-align:center;
+    }
+
+    .hero-section{
+        width:95%;
+        height:auto;
+        margin:20px 0;
+        padding:20px;
+        border-radius:12px;
+        font-size:15px;
+        line-height:24px;
+    }
+
+    #farming{
+        width:260px;
+        height:auto;
+    }
+
+    /* ===== OWNER ===== */
+
+    .owner{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:column;
+    }
+
+    #owner-detail{
+        width:180px;
+        height:180px;
+        margin:20px 0;
+    }
+
+    .owner-name{
+        padding:5px;
+        text-align:center;
+        font-size:18px;
+    }
+
+    /* ===== PRODUCTS ===== */
+
+    main{
+        padding:10px;
+        margin:0;
+    }
+
+    .box{
+        display:grid;
+        grid-template-columns:1fr;
+        gap:25px;
+        padding:10px;
+        margin-top:20px;
+    }
+
+    .product{
+        width:100%;
+        padding:10px;
+    }
+
+    .box1{
+        width:180px;
+        height:180px;
+        margin:auto;
+        border-radius:20px;
+    }
+
+    .box-data{
+        text-align:center;
+        line-height:24px;
+        font-size:14px;
+        padding:10px;
+    }
+
+    .button{
+        padding:8px 12px;
+        font-size:14px;
+        border:none;
+        border-radius:6px;
+    }
+
+    /* ===== CART ===== */
+
+    #cart-btn{
+        padding:8px 12px;
+        border:none;
+        border-radius:6px;
+        position:relative;
+    }
+
+    #cart-box{
+        width:90%;
+        right:5%;
+        top:220px;
+    }
+
+    /* ===== FOOTER ===== */
+
+    .footer{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        text-align:center;
+        padding:20px 10px;
+    }
+
+    .footer img{
+        width:130px;
+        height:auto;
+    }
+
+    .working-time{
+        width:100%;
+        font-size:16px;
+        padding:10px;
+    }
+
+    .social{
+        width:100%;
+        display:flex;
+        justify-content:center;
+        gap:20px;
+        margin-top:10px;
+    }
+
+    .copyright{
+        justify-content:center;
+        font-size:11px;
+    }
+
+    .sahil-kaswan{
+        justify-content:center;
+        text-align:center;
+        font-size:14px;
+        line-height:24px;
+    }
+}
+/* =========================
+   IPAD PRO RESPONSIVE CSS
+   1024 × 1366
+========================= */
+
+@media screen and (min-width:768px) and (max-width:1100px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+    /* ===== NAVBAR ===== */
+
+    .navbar{
+        width:100%;
+        padding:15px 20px;
+        gap:15px;
+    }
+
+    .navbar img{
+        height:60px;
+    }
+
+    .nav-item{
+        display:flex;
+        align-items:center;
+        gap:12px;
+    }
+
+    .item1{
+        font-size:17px;
+        padding:8px 12px;
+    }
+
+    .search-bar{
+        display:flex;
+        align-items:center;
+        gap:10px;
+    }
+
+    .search-bar input{
+        width:220px;
+        padding:10px;
+        font-size:15px;
+    }
+
+    #button{
+        padding:10px 15px;
+    }
+
+    /* ===== HERO SECTION ===== */
+
+    .hero{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+
+    .hero-section{
+        width:85%;
+        height:auto;
+        margin-top:150px;
+        margin-bottom:40px;
+        padding:30px;
+        font-size:18px;
+        line-height:30px;
+    }
+
+    #farming{
+        width:420px;
+        height:auto;
+    }
+
+    /* ===== OWNER ===== */
+
+    .owner{
+        justify-content:center;
+    }
+
+    #owner-detail{
+        width:300px;
+        height:300px;
+        margin:30px 0;
+    }
+
+    .owner-name{
+        text-align:center;
+        padding:10px;
+    }
+
+    /* ===== PRODUCTS ===== */
+
+    .box{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:30px;
+        padding:20px;
+    }
+
+    .product{
+        width:100%;
+        padding:15px;
+    }
+
+    .box1{
+        width:220px;
+        height:220px;
+        margin:auto;
+    }
+
+    .box-data{
+        text-align:center;
+        font-size:16px;
+        line-height:28px;
+    }
+
+    .button{
+        padding:10px 15px;
+        font-size:15px;
+    }
+
+    /* ===== CART ===== */
+
+    #cart-box{
+        width:350px;
+        top:100px;
+    }
+
+    /* ===== FOOTER ===== */
+
+    .footer{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+        padding:30px 20px;
+    }
+
+    .footer img{
+        width:180px;
+        height:auto;
+    }
+
+    .working-time{
+        width:100%;
+        font-size:18px;
+        padding:15px;
+    }
+
+    .social{
+        width:100%;
+        justify-content:center;
+        gap:25px;
+        margin-top:15px;
+    }
+
+    .copyright{
+        justify-content:center;
+        font-size:12px;
+    }
+
+    .sahil-kaswan{
+        justify-content:center;
+        text-align:center;
+        font-size:15px;
+        line-height:28px;
+    }
+}

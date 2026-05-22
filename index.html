@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agri-seeds</title>
+    <link rel="stylesheet" href="Market.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">    
+</head>
+<body>
+    <header>
+        <nav class="navbar"> 
+            <div>
+              <img src="farming.png" alt="logo" height="70px"> 
+            </div> 
+            <div class="nav-item">
+                <a class="item1" href="index.html">Home</a>
+                <a class="item1" href="about.html">About</a>
+                <a class="item1" href="contact.html">contact</a>                     
+            </div>
+            <div class="search-bar">
+              <button id="cart-btn" onclick="showcart()">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span id="cart-count">0</span>
+              </button>
+                <input type="text" placeholder="looking something specific?"> 
+                <button id="button">search</button>
+            </div>
+            <div id="cart-box">
+             <h2>Your Cart</h2>
+             <div id="cart-items"></div>
+             <h3>Total ₹<span id="total">0</span></h3>
+             <input type="text" id="fullname" placeholder="Enter Full Name">
+             <textarea id="address" placeholder="Enter Delivery Address"></textarea>
+             <button onclick="whatsapporder()">
+             Order on WhatsApp
+             </button>              
+            </div>                          
+        </nav>
+         
+           <div class="hero">
+            <div class="hero-section">
+             <img id="farming" src="farming.png" target="main" alt="farming-image">        
+            </div>
+            <div class="owner">
+                <div><img id="owner-detail" src="owner.png" target="main" alt="owner">
+                  <h3 class="owner-name">Owner:  Name</h3>
+                  <h3 class="owner-name">contact no.: +91</h3>
+                  <br>
+                  <br>
+                </div> 
+            </div> 
+        </div>       
+        
+    </header>
+    <main>
+        <div class="box" >          
+            <div class="product"><a href="groundnut.html"><img class="box1" src="groundnut.png" target="main" alt="groundnut"></a>
+              <div class="box-data">
+                <a class="name">Groundnut seed A</a>
+                <br>
+                <a>Price = 700/- </a>
+                <br>
+                <span class="cart-button">
+                    <button class="button" onclick="addtocart('groundnut seed A',700)"><i class="fa-solid fa-cart-plus"></i></button>
+                    <a> add to cart </a>
+                </span> 
+              </div>     
+            </div>
+            <div class="product"><a href="groundnut.html"><img class="box1" src="groundnut.png" target="main" alt="groundnut"></a>
+              <div class="box-data">
+                <a class="name">Groundnut seed B</a>
+                <br>
+                <a>Price = 700/- </a>
+                <br>
+                <span class="cart-button">
+                    <button class="button" onclick="addtocart('groundnut seed B',700)"><i class="fa-solid fa-cart-plus"></i></button>
+                    <a> add to cart </a>
+                </span> 
+              </div>     
+            </div>
+            <div class="product"><a href="groundnut.html"><img class="box1" src="groundnut.png" target="main" alt="groundnut"></a>
+              <div class="box-data">
+                <a class="name">Groundnut seed C</a>
+                <br>
+                <a>Price = 700/- </a>
+                <br>
+                <span class="cart-button">
+                    <button class="button" onclick="addtocart('groundnut seed C',700)"><i class="fa-solid fa-cart-plus"></i></button>
+                    <a> add to cart </a>
+                </span> 
+              </div> 
+            </div>
+           <div  class="product"><a href="groundnut.html"><img class="box1" src="groundnut.png" target="main" alt="groundnut"></a>
+              <div class="box-data">
+                <a class="name">Groundnut seed D</a>
+                <br>
+                <a>Price = 700/- </a>
+                <br>
+                <span class="cart-button">
+                    <button class="button" onclick="addtocart('groundnut seed D',700)"><i class="fa-solid fa-cart-plus"></i></button>
+                    <a> add to cart </a>
+                </span> 
+              </div> 
+            </div>
+            <div  class="product"><a href="groundnut.html"><img class="box1" src="groundnut.png" target="main" alt="groundnut"></a>
+              <div class="box-data">
+                <a class="name">Groundnut seed E</a>
+                <br>
+                <a>Price = 700/- </a>
+                <br>
+                <span class="cart-button">
+                    <button class="button" onclick="addtocart('groundnut seed E',700)"><i class="fa-solid fa-cart-plus"></i></button>
+                    <a> add to cart </a>
+                </span> 
+              </div> 
+            </div> 
+           <!--<div  class="product"><a href="groundnut.html"><img class="box1" src="groundnut.png" target="main" alt="groundnut"></a>
+              <div class="box-data">
+                <a class="name">bestseller</a>
+                <br>
+                <a>Price = 200/- </a>
+                <br>
+                <span class="cart-button">
+                    <button class="button" onclick="addtocart('groundnut seeds',200)"><i class="fa-solid fa-cart-plus"></i></button>
+                    <a> add to cart </a>
+                </span> 
+              </div> 
+            </div>-->  
+        </div>
+        <div class="box" >          
+            <div  class="product"><a href="bittegourd.html"><img class="box1" src="bittegourd.png" target="main" alt="bittegourd"></a>
+              <div class="box-data">
+                <a>Bittegourd seed A</a>
+                <br>
+                <a>Price = 1200/- </a>
+                <br>
+                <span class="cart-button">
+                    <button class="button" onclick="addtocart('bittegourd seed A',1200)"><i class="fa-solid fa-cart-plus"></i></button>
+                    <a> add to cart </a>
+                </span> 
+              </div>     
+            </div>
+            <div  class="product"><a href="bittegourd.html"><img class="box1" src="bittegourd.png" target="main" alt="bittegourd"></a>
+              <div class="box-data">
+                <a>Bittegourd seed B</a>
+                <br>
+                <a>Price = 1200/- </a>
+                <br>
+                <span class="cart-button">
+                    <button class="button" onclick="addtocart('bittegourd seed B',1200)"><i class="fa-solid fa-cart-plus"></i></button>
+                    <a> add to cart </a>
+                </span> 
+              </div>     
+            </div>
+            <div  class="product"><a href="bittegourd.html"><img class="box1" src="bittegourd.png" target="main" alt="bittegourd"></a>
+              <div class="box-data">
+                <a>Bittegourd seed C</a>
+                <br>
+                <a>Price = 1200/- </a>
+                <br>
+                <span class="cart-button">
+                    <button class="button" onclick="addtocart('bittegourd seed C',1200)"><i class="fa-solid fa-cart-plus"></i></button>
+                    <a> add to cart </a>
+                </span> 
+              </div>       
+            </div>
+            <div  class="product"><a href="bittegourd.html"><img class="box1" src="bittegourd.png" target="main" alt="bittegourd"></a>
+              <div class="box-data">
+                <a>Bittegourd seed D</a>
+                <br>
+                <a>Price = 1200/- </a>
+                <br>
+                <span class="cart-button">
+                    <button class="button" onclick="addtocart('bittegourd seed D',1200)"><i class="fa-solid fa-cart-plus"></i></button>
+                    <a> add to cart </a>
+                </span> 
+              </div>     
+            </div>
+            <div  class="product"><a href="bittegourd.html"><img class="box1" src="bittegourd.png" target="main" alt="bittegourd"></a>
+              <div class="box-data">
+                <a>Bittegourd seed E</a>
+                <br>
+                <a>Price = 1200/- </a>
+                <br>
+                <span class="cart-button">
+                    <button class="button" onclick="addtocart('bittegourd seed E',1200)"><i class="fa-solid fa-cart-plus"></i></button>
+                    <a> add to cart </a>
+                </span> 
+              </div>      
+            </div> 
+           <!--<div><img class="box1" src="bittegourd.png" target="main" alt="bittegourd">
+              <div class="box-data">
+                <a>bestseller</a>
+                <br>
+                <a>Price = 200/- </a>
+                <br>
+                <span class="cart-button">
+                    <button class="button" onclick="addtocart('bittegourd','200')"><i class="fa-solid fa-cart-plus"></i></button>
+                    <a> add to cart </a>
+                </span> 
+              </div>     
+            </div> --> 
+        </div>
+        <div class="box" >          
+            <div  class="product"><a href="betroot.html"><img class="box1" src="betroot.png" target="main" alt="betroot"></a>
+              <div class="box-data">
+                <a>Betroot seed A</a>
+                <br>
+                <a>Price = 200/- </a>
+                <br>
+                <span class="cart-button">
+                    <button class="button" onclick="addtocart('Betroot seed A',200)"><i class="fa-solid fa-cart-plus"></i></button>
+                    <a> add to cart </a>
+                </span> 
+              </div>     
+            </div>
+            <div  class="product"><a href="betroot.html"><img class="box1" src="betroot.png" target="main" alt="betroot"></a>
+              <div class="box-data">
+                <a>Betroot seed B</a>
+                <br>
+                <a>Price = 200/- </a>
+                <br>
+                <span class="cart-button">
+                    <button class="button" onclick="addtocart('Betroot seed B',200)"><i class="fa-solid fa-cart-plus"></i></button>
+                    <a> add to cart </a>
+                </span> 
+              </div>      
+            </div>
+             <div  class="product"><a href="betroot.html"><img class="box1" src="betroot.png" target="main" alt="betroot"></a>
+              <div class="box-data">
+                <a>Betroot seed C</a>
+                <br>
+                <a>Price = 200/- </a>
+                <br>
+                <span class="cart-button">
+                    <button class="button" onclick="addtocart('Betroot seed C',200)"><i class="fa-solid fa-cart-plus"></i></button>
+                    <a> add to cart </a>
+                </span> 
+              </div>        
+            </div>
+           <div  class="product"><a href="betroot.html"><img class="box1" src="betroot.png" target="main" alt="betroot"></a>
+              <div class="box-data">
+                <a>Betroot seed D</a>
+                <br>
+                <a>Price = 200/- </a>
+                <br>
+                <span class="cart-button">
+                    <button class="button" onclick="addtocart('Betroot seed D',200)"><i class="fa-solid fa-cart-plus"></i></button>
+                    <a> add to cart </a>
+                </span> 
+              </div>      
+            </div>
+            <div  class="product"><a href="betroot.html"><img class="box1" src="betroot.png" target="main" alt="betroot"></a>
+              <div class="box-data">
+                <a>Betroot seed E</a>
+                <br>
+                <a>Price = 200/- </a>
+                <br>
+                <span class="cart-button">
+                    <button class="button" onclick="addtocart('Betroot seed E',200)"><i class="fa-solid fa-cart-plus"></i></button>
+                    <a> add to cart </a>
+                </span> 
+              </div>      
+            </div> 
+           <!-- <div><img class="box1" src="betroot.png" target="main" alt="betroot">
+              <div class="box-data">
+                <a>bestseller</a>
+                <br>
+                <a>Price = 200/- </a>
+                <br>
+                <span class="cart-button">
+                    <button class="button" onclick="addtocart('Name','price')"><i class="fa-solid fa-cart-plus"></i></button>
+                    <a> add to cart </a>
+                </span> 
+              </div>     
+            </div> --> 
+        </div>
+        <div class="box" >          
+            <div  class="product"><a href="bajra.html"><img class="box1" src="bajra.png" target="main" alt="betroot"></a>
+              <div class="box-data">
+                <a>Bajra seed A</a>
+                <br>
+                <a>Price = 500/- </a>
+                <br>
+                <span class="cart-button">
+                    <button class="button" onclick="addtocart('Bajra seed A',500)"><i class="fa-solid fa-cart-plus"></i></button>
+                    <a> add to cart </a>
+                </span> 
+              </div>     
+            </div>
+           <div  class="product"><a href="bajra.html"><img class="box1" src="bajra.png" target="main" alt="betroot"></a>
+              <div class="box-data">
+                <a>Bajra seed B</a>
+                <br>
+                <a>Price = 500/- </a>
+                <br>
+                <span class="cart-button">
+                    <button class="button" onclick="addtocart('Bajra seed B',500)"><i class="fa-solid fa-cart-plus"></i></button>
+                    <a> add to cart </a>
+                </span> 
+              </div>     
+            </div>
+           <div  class="product"><a href="bajra.html"><img class="box1" src="bajra.png" target="main" alt="betroot"></a>
+              <div class="box-data">
+                <a>Bajra seed C</a>
+                <br>
+                <a>Price = 500/- </a>
+                <br>
+                <span class="cart-button">
+                    <button class="button" onclick="addtocart('Bajra seed C',500)"><i class="fa-solid fa-cart-plus"></i></button>
+                    <a> add to cart </a>
+                </span> 
+              </div>       
+            </div>
+           <div  class="product"><a href="bajra.html"><img class="box1" src="bajra.png" target="main" alt="betroot"></a>
+              <div class="box-data">
+                <a>Bajra seed D</a>
+                <br>
+                <a>Price = 500/- </a>
+                <br>
+                <span class="cart-button">
+                    <button class="button" onclick="addtocart('Bajra seed D',500)"><i class="fa-solid fa-cart-plus"></i></button>
+                    <a> add to cart </a>
+                </span> 
+              </div>      
+            </div>
+            <div  class="product"><a href="bajra.html"><img class="box1" src="bajra.png" target="main" alt="betroot"></a>
+              <div class="box-data">
+                <a>Bajra seed E</a>
+                <br>
+                <a>Price = 500/- </a>
+                <br>
+                <span class="cart-button">
+                    <button class="button" onclick="addtocart('Bajra seed E',500)"><i class="fa-solid fa-cart-plus"></i></button>
+                    <a> add to cart </a>
+                </span> 
+              </div>     
+            </div> 
+           <!--<div><img class="box1" src="bajra.png" target="main" alt="bajra">
+              <div class="box-data">
+                <a>bestseller</a>
+                <br>
+                <a>Price = 200/- </a>
+                <br>
+                <span class="cart-button">
+                    <button class="button" onclick="addtocart('Name','price')"><i class="fa-solid fa-cart-plus"></i></button>
+                    <a> add to cart </a>
+                </span> 
+              </div>      
+            </div>-->  
+        </div>                            
+    </main>
+    <footer class="footer">
+         <img src="farming.png" target="main" alt="logo" height="200px" width="10%" >
+        <div class="working-time">
+            <h2>Shop open</h2>
+            <a>MONDAY to FRIDAY: 8:00 to 21:00</a>
+            <br>
+            <a>SATURDAY to SUNDAY: 9:00 to 22:00</a>
+            <br>
+            <br>
+            <p><u>“Farming - the culture of India.”</u></p>
+            <br>
+            <div>
+              <h2 id="social-media">social media</h2>       
+            </div>
+            <div class="social">
+             <a href="https://www.instagram.com/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+             <a href="https://www.facebook.com/"> <i class="fa-brands fa-facebook-f"></i></a>
+               <a href="https://x.com/" ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                </svg></a>
+            </div>
+            <hr>
+            <div class="copyright">
+              <a>© 2026 Agri seeds. All rights reserved.</a>
+            </div> 
+            <br>
+            <br>
+            <br>
+            <br>
+           <div class="sahil-kaswan">
+            <a>Designed by: Dr.Sahil Choudhary
+              <br>
+            G-mail. sahilkaswan07@gmail.com
+            <br>
+            contact no. 7300479727
+            </a>                        
+           </div>
+        </div>                
+    </footer>
+    <script src="script.js"></script>     
+</body>
+</html>
